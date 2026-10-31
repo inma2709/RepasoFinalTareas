@@ -10,8 +10,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f1f5f9;
-  color: #333;
+  background-color: #10172e;
+  color: #e5e7eb;
 }
 
 .contenedor {
@@ -22,23 +22,37 @@ body {
 
 
 /* =====================================
-   CABECERA
+   CABECERA ESPACIAL
 ===================================== */
 
 .cabecera {
-  background-color: #2563eb;
-  color: white;
+  background-color: #192750;
   text-align: center;
   padding: 20px;
 }
 
 .cabecera h1 {
+  color: #ffffff;
+  font-size: 32px;
   margin-bottom: 10px;
+}
+
+.cabecera p {
+  color: #b9d8ff;
+}
+
+.imagen-cabecera {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 
 /* =====================================
-   DISTRIBUCIÓN
+   DISTRIBUCIÓN PRINCIPAL
 ===================================== */
 
 .distribucion {
@@ -49,13 +63,13 @@ body {
 }
 
 .panel {
-  background-color: white;
+  background-color: #202d50;
   padding: 25px;
   border-radius: 10px;
 }
 
 h2 {
-  color: #2563eb;
+  color: #7dd3fc;
 }
 
 
@@ -77,13 +91,15 @@ input,
 select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #65749b;
   border-radius: 5px;
+  background-color: #ffffff;
+  color: #222;
 }
 
 
 /* =====================================
-   BOTÓN
+   BOTÓN PRINCIPAL
 ===================================== */
 
 .boton-principal {
@@ -94,20 +110,21 @@ select {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 15px;
 }
 
 .boton-principal:hover {
-  background-color: #1d4ed8;
+  background-color: #7c3aed;
 }
 
 .mensaje {
-  color: #2563eb;
+  color: #67e8f9;
   font-weight: bold;
 }
 
 
 /* =====================================
-   TAREAS
+   TARJETAS DE TAREAS
 ===================================== */
 
 .lista-tareas {
@@ -117,12 +134,14 @@ select {
 }
 
 .tarea {
-  background-color: #eff6ff;
+  background-color: #303e68;
   padding: 15px;
+  border-left: 4px solid #38bdf8;
   border-radius: 8px;
 }
 
 .tarea h3 {
+  color: #ffffff;
   margin: 0 0 5px;
 }
 
@@ -131,12 +150,13 @@ select {
 }
 
 .duracion {
-  color: #2563eb;
+  color: #fbbf24;
   font-weight: bold;
 }
 
 .contador {
   font-weight: bold;
+  color: #b9d8ff;
 }
 
 
@@ -145,7 +165,7 @@ select {
 ===================================== */
 
 .resumen-total {
-  background-color: #dbeafe;
+  background-color: #374174;
   padding: 15px;
   margin-top: 20px;
   border-radius: 8px;
@@ -155,7 +175,7 @@ select {
 #tiempoTotal {
   font-size: 25px;
   font-weight: bold;
-  color: #2563eb;
+  color: #fbbf24;
 }
 
 
@@ -167,8 +187,8 @@ select {
   text-align: center;
   padding: 20px;
   margin-top: 30px;
-  background-color: white;
-  color: #666;
+  background-color: #192750;
+  color: #b9d8ff;
 }
 
 
@@ -180,6 +200,10 @@ select {
 
   .distribucion {
     grid-template-columns: 1fr;
+  }
+
+  .imagen-cabecera {
+    height: auto;
   }
 
 }
