@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Mi agenda de tareas</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+
+  <!-- CABECERA -->
+  <header class="cabecera">
+    <div class="contenedor">
+      <h1>📋 Mi agenda de tareas</h1>
+      <p>Organiza tus actividades y aprovecha tu tiempo.</p>
+    </div>
+  </header>
+
+
+  <main class="contenedor">
+
+    <div class="distribucion">
+
+      <!-- FORMULARIO -->
+      <section class="panel">
+
+        <h2>1. Nueva tarea</h2>
+        <p>Introduce los datos de tu actividad.</p>
+
+        <form id="formularioTarea">
+
+          <!-- NOMBRE -->
+          <div class="campo">
+            <label for="nombreTarea">
+              Nombre de la tarea
+            </label>
+
+            <input
+              id="nombreTarea"
+              type="text"
+              placeholder="Ej.: Repasar JavaScript"
+            >
+          </div>
+
+          <!-- CATEGORÍA -->
+          <div class="campo">
+            <label for="categoria">
+              Categoría
+            </label>
+
+            <select id="categoria">
+              <option value="">
+                Selecciona una categoría
+              </option>
+              <option value="Estudio">Estudio</option>
+              <option value="Trabajo">Trabajo</option>
+              <option value="Personal">Personal</option>
+              <option value="Ocio">Ocio</option>
+            </select>
+          </div>
+
+          <!-- DURACIÓN -->
+          <div class="campo">
+            <label for="minutos">
+              Duración (minutos)
+            </label>
+
+            <input
+              id="minutos"
+              type="number"
+              placeholder="Ej.: 30"
+            >
+          </div>
+
+          <!-- BOTÓN -->
+          <button
+            type="submit"
+            class="boton-principal"
+          >
+            Añadir tarea
+          </button>
+
+          <p id="mensaje" class="mensaje"></p>
+
+        </form>
+
+      </section>
+
+
+      <!-- LISTADO DE TAREAS -->
+      <section class="panel">
+
+        <h2>2. Tareas registradas</h2>
+        <p>Estas son tus actividades pendientes.</p>
+
+        <p class="contador">
+          Total de tareas:
+          <span id="totalTareas">0</span>
+        </p>
+
+        <!-- JavaScript añadirá las tareas aquí -->
+        <div
+          id="listaTareas"
+          class="lista-tareas"
+        ></div>
+
+        <!-- TIEMPO TOTAL -->
+        <div class="resumen-total">
+
+          <h3>Tiempo total de las tareas</h3>
+
+          <p id="tiempoTotal">0 minutos</p>
+
+        </div>
+
+      </section>
+
+    </div>
+
+
+    <!-- ACTIVIDAD DE HTML, CSS Y EVENTOS -->
+    <!-- Los alumnos añadirán aquí dos botones
+         y un párrafo para mostrar mensajes. -->
+
+
+  </main>
+
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie-pagina">
+    Práctica de repaso · HTML + CSS + JavaScript
+  </footer>
+
+</body>
+</html>

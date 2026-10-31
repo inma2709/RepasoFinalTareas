@@ -1,0 +1,185 @@
+
+/* =====================================
+   ESTILOS GENERALES
+===================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+  color: #333;
+}
+
+.contenedor {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+/* =====================================
+   CABECERA
+===================================== */
+
+.cabecera {
+  background-color: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.cabecera h1 {
+  margin-bottom: 10px;
+}
+
+
+/* =====================================
+   DISTRIBUCIÓN
+===================================== */
+
+.distribucion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.panel {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #2563eb;
+}
+
+
+/* =====================================
+   FORMULARIO
+===================================== */
+
+.campo {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+/* =====================================
+   BOTÓN
+===================================== */
+
+.boton-principal {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-principal:hover {
+  background-color: #1d4ed8;
+}
+
+.mensaje {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+
+/* =====================================
+   TAREAS
+===================================== */
+
+.lista-tareas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tarea {
+  background-color: #eff6ff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.tarea h3 {
+  margin: 0 0 5px;
+}
+
+.tarea p {
+  margin: 5px 0;
+}
+
+.duracion {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.contador {
+  font-weight: bold;
+}
+
+
+/* =====================================
+   TIEMPO TOTAL
+===================================== */
+
+.resumen-total {
+  background-color: #dbeafe;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#tiempoTotal {
+  font-size: 25px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+
+/* =====================================
+   PIE DE PÁGINA
+===================================== */
+
+.pie-pagina {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: white;
+  color: #666;
+}
+
+
+/* =====================================
+   ADAPTACIÓN A MÓVILES
+===================================== */
+
+@media (max-width: 750px) {
+
+  .distribucion {
+    grid-template-columns: 1fr;
+  }
+
+}
