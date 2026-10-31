@@ -41,6 +41,7 @@ Incluye la primera imagen utilizando Markdown:
 ```markdown
 ![Vista inicial de la agenda](images/intro.png)
 ```
+![Vista inicial de la agenda](images/intro.png)
 
 ### Funcionalidades
 
